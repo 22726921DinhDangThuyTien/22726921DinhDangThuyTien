@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title> </title>
+    
+    </head>
+    <Body> 
+        <p> Nhap nam can kiem tra:</p>
+        <input type="text" name="txtName" id="txtName">
+        <input type="button" value="kiem tra" onclick="kiemtranamnhuan()" />
+        </p> 
+        <script language="javascript ">
+            function kiemtranamnhuan() {
+                var nam = <document class="getElemenbyId"></document>("txtName").value;
+                // neu nam chia het cho 100
+                // thi kiem tra no co chia het cho 400 hay khong
+                if (nam % 100 == 0) {// neu cia het cho 400 thi la nam nhuan
+                if (nam % 400 ==0 ) {
+                    alert (' nam ' + nam + ' la nam nhuan ' ); }
+                    else { // nguoc lai khong phai nam nhuan
+                    alert (' nam ' + nam + ' : khong phia nam nhuan' ) ;
+                }
+                } else if (nam % 4 == 0 ) { // truong hop chia het cho 4 thi la nam nhuan
+                    alert (' nam ' + nam + ' : la nam nhuan' ) ;
+                } else  {// cuoi cung truong hop khong phia nam nhuan
+                    alert (' nam ' + nam + ' : khong phia nam nhuan' ) ;}
+            
+    
+            } 
+        < /script >
+    </Body>
+        
+    
+    </html> 
+    
